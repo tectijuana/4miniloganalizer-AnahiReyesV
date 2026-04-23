@@ -159,6 +159,8 @@ No está permitido:
 
 Comprender cómo un problema de procesamiento de datos es implementado a nivel máquina mediante instrucciones ARM64.
 
+https://asciinema.org/a/pOHEiuekcZlCaVt8
+
 ---
 
 ## Nota
