@@ -4,9 +4,16 @@
 # Práctica 1
 
 ## Implementación de un Mini Cloud Log Analyzer en ARM64
+**Nombre:** Reyes Velasquez Anahi
+
+**No. Control:** 23212056
+
+**Horario:** 4:00 pm
 
 **Modalidad:** Individual
+
 **Entorno de trabajo:** AWS Ubuntu ARM64 + GitHub Classroom
+
 **Lenguaje:** ARM64 Assembly (GNU Assembler) + Bash + GNU Make
 
 ---
@@ -15,7 +22,9 @@
 
 Los sistemas modernos de cómputo en la nube generan continuamente registros (*logs*) que permiten monitorear el estado de servicios, detectar fallas y activar alertas ante eventos críticos.
 
-En esta práctica se desarrollará un módulo simplificado de análisis de logs, implementado en **ARM64 Assembly**, inspirado en tareas reales de monitoreo utilizadas en sistemas cloud, observabilidad y administración de infraestructura.
+Este programa implementa un analizador básico de logs en lenguaje ensamblador ARM64. Su función principal es leer códigos de estado HTTP desde la entrada estándar (stdin), procesarlos y clasificarlos en tres categorías: respuestas exitosas (2xx), errores del cliente (4xx) y errores del servidor (5xx).
+
+A través de esta implementación se utilizan estructuras de control, manejo de registros y llamadas al sistema en Linux, permitiendo comprender cómo se procesan datos a bajo nivel y cómo se construye lógica de análisis directamente en ensamblador.
 
 El programa procesará códigos de estado HTTP suministrados mediante entrada estándar (stdin):
 
@@ -27,7 +36,7 @@ cat logs.txt | ./analyzer
 
 ## Objetivo general
 
-Diseñar e implementar, en lenguaje ensamblador ARM64, una solución para procesar registros de eventos y detectar condiciones definidas según la variante asignada.
+Desarrollar un programa en lenguaje ensamblador ARM64 capaz de procesar códigos de estado HTTP desde la entrada estándar, clasificarlos según su categoría (2xx, 4xx y 5xx) y contabilizar su frecuencia, aplicando conceptos fundamentales de programación a bajo nivel en un entorno Linux.
 
 ---
 
@@ -117,6 +126,11 @@ make
 ```bash id="gcqlf2"
 cat logs.txt | ./analyzer
 ```
+<img width="1278" height="291" alt="Captura de pantalla 2026-04-22 165402" src="https://github.com/user-attachments/assets/e3dfff84-6176-4db4-9982-28f69ebc97dc" />
+
+##
+
+**Video en asciinema:**  https://asciinema.org/a/pOHEiuekcZlCaVt8
 
 ---
 
@@ -159,7 +173,7 @@ No está permitido:
 
 Comprender cómo un problema de procesamiento de datos es implementado a nivel máquina mediante instrucciones ARM64.
 
-https://asciinema.org/a/pOHEiuekcZlCaVt8
+
 
 ---
 
